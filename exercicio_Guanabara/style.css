@@ -1,0 +1,136 @@
+ /*@charset "b"utf-8" tag para formato de caractere universal,  para padronizar os caractere com o html,
+  para ao abrir a pagina, nao dar erro relacionado a caracteres especias*/
+ @charset "utf-8";
+
+ /*
+ :root : raiz do documento, tudo que é declarado dentro dele
+ serve para o documento todo. como se fosse um seletor universal 
+ da pagina. 
+  */
+  :root{
+    --cor:#84E1AD;  /*estrutura para declarar variavel*/ 
+}
+
+body{ 
+    
+    background-color:var(--cor)/* estrutura para chamar a variavel*/  ;
+}
+
+header{
+    background: linear-gradient(#37C374,#1A6038)
+    
+}
+
+header > h1{
+    padding-top: 10px;
+   
+    text-shadow:2px/* lados*/  2px/* cima e baixo*/ 5px/* tipo: espalhada ou nao*/  #e9190a;
+}
+
+header  h1, p{
+   text-align: center;
+    color: rgb(8, 7, 7);  
+     
+}
+
+main{
+    background-color: white;
+   max-width: 1000px;
+   margin: auto;
+   padding: 10px;
+}
+
+ main  h1{
+    color: #12552f;
+    font-size: 1.8em;
+    text-indent: 28px;
+    background-image: linear-gradient(to right, rgb(39, 146, 75),transparent); 
+}
+
+
+
+main  p{
+    color: #080a09;
+    text-align:justify;
+    margin-left: 10px;
+    text-indent: 25px;
+}
+
+main a{
+    text-decoration: none;
+}
+
+main  a:hover {
+   background-color: #07d173;
+    text-decoration: none;
+}
+
+ main h2{
+    font-size: 1.6em;
+    color: #2b8351;
+    text-indent: 15px;
+    background-image: linear-gradient(to right,rgb(89, 223, 89), transparent  );    
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: #155837;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.pequena{
+        max-width: 300px;
+        margin: auto;
+        display: block;
+      
+}
+
+.lista{
+    background-color: #6bd69998;
+    color: black;
+    padding: 8px;
+    border-radius: 10px; 
+}
+
+.lista > h3{
+    background-color: #39a065;
+    border-radius: 8px 8px 0px 0px;
+    padding: 8px; 
+    margin: -8px -8px 0px -8px;
+}
+
+/*OBS:como deixar o video responsivo seguindo esses passos: */
+div.video{
+    position: relative;
+   
+
+    margin: 0px -10px 20px -10px;
+    padding: 20px;
+    padding-bottom: 55.5%;
+}
+
+div.video > iframe{
+    position: absolute;
+
+    top: 5%;
+    left: 5%;
+    width: 93%;
+    height: 93%;
+}
+
+div > ul{
+    columns: 2;
+    cursor: pointer;
+}
+
+footer{
+    background-color:#4a7e64;
+}
